@@ -2,13 +2,16 @@
 import { useCounterStore } from './stores/counter';
 
 const counter = useCounterStore()
+function appCount(): void {
+  counter.increment()
+}
 </script>
 
 <template>
   <div>Hello</div>
   <div>Count: {{ counter.count }}</div>
   <div>DoubleCount: {{ counter.doubleCount }}</div>
-  <button>Increment</button>
+  <button @click="appCount()">Increment</button>
 </template>
 
 <style scoped>
