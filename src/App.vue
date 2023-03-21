@@ -2,6 +2,7 @@
 import { useCounterStore } from './stores/counter';
 import HelloPinia from './components/HelloPinia.vue'
 import ResetPinia from './components/ResetPinia.vue'
+import ReplacePinia from './components/ReplacePinia.vue'
 
 const counter = useCounterStore()
 function appCount(): void {
@@ -19,6 +20,7 @@ function appCount(): void {
   <h2>Hello Pinia Component</h2>
   <HelloPinia />
   <ResetPinia />
+  <ReplacePinia />
 </template>
 
 <style scoped>
